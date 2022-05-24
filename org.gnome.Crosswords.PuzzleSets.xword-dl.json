@@ -19,7 +19,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/blandford/xword-dl.git",
-                    "commit": "29ad0854a72e64b9417145a8a4c619da32d1f6db"
+                    "tag": "2022.05.21"
                 }
             ],
             "build-commands": [
@@ -34,7 +34,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/jrb/puzzle-sets-xword-dl.git",
-                    "commit" : "5c58d10e8a21e72d85446337fd7d2c3fbbf294c9"
+                    "commit" : "74e1c7cb33f35d9d0093d048ab6da703c23e3d6c"
                 }
             ],
             "post-install": [
