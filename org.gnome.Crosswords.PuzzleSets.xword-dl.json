@@ -34,7 +34,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/jrb/puzzle-sets-xword-dl.git",
-                    "commit" : "74e1c7cb33f35d9d0093d048ab6da703c23e3d6c"
+                    "commit" : "1aaae4de3053567bf6e546ae972f1430e2e397a1"
                 }
             ],
             "post-install": [
