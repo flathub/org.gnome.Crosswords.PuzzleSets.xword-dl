@@ -47,6 +47,20 @@
             ]
         },
         {
+            "name": "python3-regex",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"regex==2022.3.2\" --no-build-isolation"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/4f/17/21e7195da87bcdbdd4ec32fdfdc87ccd5cf97b0a18e0f08ecacbaefca284/regex-2022.3.2.tar.gz",
+                    "sha256": "79e5af1ff258bc0fe0bdd6f69bc4ae33935a898e3cbefbbccf22e88a27fa053b"
+                }
+            ]
+        },
+        {
             "name": "python3-dateparser",
             "buildsystem": "simple",
             "build-commands": [
@@ -55,8 +69,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/89/2d/49329ebec33b14dae61ecc8c85abe596341832fa36c4bcd3d99fddda018b/tzdata-2022.1-py2.py3-none-any.whl",
-                    "sha256": "238e70234214138ed7b4e8a0fab0e5e13872edab3be586ab8198c407620e2ab9"
+                    "url": "https://files.pythonhosted.org/packages/71/9b/8b9fea4f4dc956de76baa291cec1c864a8edadf2950d1740bc386d7fe55a/tzdata-2022.2-py2.py3-none-any.whl",
+                    "sha256": "c3119520447d68ef3eb8187a55a4f44fa455f30eb1b4238fa5691ba094f2b05b"
                 },
                 {
                     "type": "file",
@@ -70,8 +84,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/60/2e/dec1cc18c51b8df33c7c4d0a321b084cf38e1733b98f9d15018880fb4970/pytz-2022.1-py2.py3-none-any.whl",
-                    "sha256": "e68985985296d9a66a881eb3193b0906246245294a881e7c8afe623866ac6a5c"
+                    "url": "https://files.pythonhosted.org/packages/d5/50/54451e88e3da4616286029a3a17fc377de817f66a0f50e1faaee90161724/pytz-2022.2.1-py2.py3-none-any.whl",
+                    "sha256": "220f481bdafa09c3955dfbdddb7b57780e9a94f5127e35456a48589b9e0c0197"
                 },
                 {
                     "type": "file",
@@ -80,8 +94,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/b6/d9/b6971b194833ee2eccf4591f9097833b65e669cce0f8fc0ff2a118238f63/regex-2022.4.24.tar.gz",
-                    "sha256": "92183e9180c392371079262879c6532ccf55f808e6900df5d9f03c9ca8807255"
+                    "url": "https://files.pythonhosted.org/packages/4f/17/21e7195da87bcdbdd4ec32fdfdc87ccd5cf97b0a18e0f08ecacbaefca284/regex-2022.3.2.tar.gz",
+                    "sha256": "79e5af1ff258bc0fe0bdd6f69bc4ae33935a898e3cbefbbccf22e88a27fa053b"
                 },
                 {
                     "type": "file",
@@ -127,8 +141,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/ec/03/062e6444ce4baf1eac17a6a0ebfe36bb1ad05e1df0e20b110de59c278498/urllib3-1.26.9-py2.py3-none-any.whl",
-                    "sha256": "44ece4d53fb1706f667c9bd1c648f5469a2ec925fcf3a776667042d645472c14"
+                    "url": "https://files.pythonhosted.org/packages/6f/de/5be2e3eed8426f871b170663333a0f627fc2924cc386cd41be065e7ea870/urllib3-1.26.12-py2.py3-none-any.whl",
+                    "sha256": "b930dd878d5a8afb066a637fbb35144fe7901e3b209d1cd4f524bd0e9deee997"
                 },
                 {
                     "type": "file",
@@ -142,8 +156,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/37/45/946c02767aabb873146011e665728b680884cd8fe70dde973c640e45b775/certifi-2021.10.8-py2.py3-none-any.whl",
-                    "sha256": "d62a0163eb4c2344ac042ab2bdf75399a71a2d8c7d47eac2e2ee91b9d6339569"
+                    "url": "https://files.pythonhosted.org/packages/e9/06/d3d367b7af6305b16f0d28ae2aaeb86154fa91f144f036c2d5002a5a202b/certifi-2022.6.15-py3-none-any.whl",
+                    "sha256": "fe86415d55e84719d75f8b69414f6438ac3547d2078ab91b67e779ef69378412"
                 },
                 {
                     "type": "file",
