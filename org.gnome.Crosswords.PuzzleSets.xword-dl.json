@@ -3,7 +3,7 @@
     "runtime": "org.gnome.Crosswords",
     "runtime-version": "stable",
     "branch": "1",
-    "sdk" : "org.gnome.Sdk//42",
+    "sdk" : "org.gnome.Sdk//43",
     "build-extension": true,
     "separate-locales": false,
     "appstream-compose": false,
@@ -18,8 +18,8 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://github.com/blandford/xword-dl.git",
-                    "commit": "e2cfe15"
+                    "url": "https://github.com/thisisparker/xword-dl.git",
+                    "commit": "bbb4877300be6e25d25a92aefba728fbacabca18"
                 }
             ],
             "build-commands": [
