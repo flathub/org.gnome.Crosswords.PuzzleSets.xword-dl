@@ -19,11 +19,11 @@
                 {
                     "type": "git",
                     "url": "https://github.com/thisisparker/xword-dl.git",
-                    "commit": "bbb4877300be6e25d25a92aefba728fbacabca18"
+                    "commit": "a6b0e56a7b6910cc4ff94cdb4ce31dde8db42e7e"
                 }
             ],
             "build-commands": [
-                "install xword_dl.py ${FLATPAK_DEST}/bin/xword-dl"
+                "python3 setup.py install --prefix ${FLATPAK_DEST}"
             ]
         },
         {
@@ -34,12 +34,14 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/jrb/puzzle-sets-xword-dl.git",
-                    "commit" : "1aaae4de3053567bf6e546ae972f1430e2e397a1"
+                    "commit" : "f3c460dccd5152cc905b0f29f16337464a2b991b"
                 }
             ],
             "post-install": [
                 "install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo ../org.gnome.Crosswords.PuzzleSets.xword-dl.metainfo.xml",
-                "appstream-compose --basename=org.gnome.Crosswords.PuzzleSets.xword-dl --prefix=${FLATPAK_DEST} --origin=flatpak org.gnome.Crosswords.PuzzleSets.xword-dl"
+                "appstream-compose --basename=org.gnome.Crosswords.PuzzleSets.xword-dl --prefix=${FLATPAK_DEST} --origin=flatpak org.gnome.Crosswords.PuzzleSets.xword-dl",
+                "mv ${FLATPAK_DEST}/bin/xword-dl ${FLATPAK_DEST}/bin/xword-dl.orig",
+                "install -Dm755 ../xword-dl ${FLATPAK_DEST}/bin/xword-dl"
             ]
         }
     ]
