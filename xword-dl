@@ -1,0 +1,6 @@
+#!/bin/sh
+# Update this file when updating xword-dl
+
+export PYTHONPATH=/app/extensions/xword-dl/lib/python3.10/site-packages/xword_dl-2022.12.26-py3.10.egg/:/app/extensions/xword-dl/lib/python3.10/site-packages/
+
+exec /app/extensions/xword-dl/bin/xword-dl.orig "$@"
