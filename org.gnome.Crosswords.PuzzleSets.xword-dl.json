@@ -19,7 +19,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/thisisparker/xword-dl.git",
-                    "commit": "bd8de3356788523000dcffe66ec872f862e4c5e1"
+                    "commit": "f926a739b9d572341d3e94c3f170981ada804f87"
                 }
             ],
             "build-commands": [
