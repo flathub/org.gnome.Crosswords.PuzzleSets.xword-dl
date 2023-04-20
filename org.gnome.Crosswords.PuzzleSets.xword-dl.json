@@ -3,7 +3,7 @@
     "runtime": "org.gnome.Crosswords",
     "runtime-version": "stable",
     "branch": "1",
-    "sdk" : "org.gnome.Sdk//43",
+    "sdk" : "org.gnome.Sdk//44",
     "build-extension": true,
     "separate-locales": false,
     "appstream-compose": false,
