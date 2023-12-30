@@ -19,7 +19,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/thisisparker/xword-dl.git",
-                    "commit": "ddb5215f3b5e881fd1ea634ff689bc4c7e1ea52d"
+                    "commit": "a20a399862c78a74fb43e68db2d8d2d9a9468090"
                 }
             ],
             "build-commands": [
@@ -34,7 +34,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/jrb/puzzle-sets-xword-dl.git",
-                    "tag" : "2023.9.5"
+                    "tag" : "0.4.5"
                 }
             ],
             "post-install": [
