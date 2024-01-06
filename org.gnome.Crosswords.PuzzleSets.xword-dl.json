@@ -3,7 +3,7 @@
     "runtime": "org.gnome.Crosswords",
     "runtime-version": "stable",
     "branch": "1",
-    "sdk" : "org.gnome.Sdk//44",
+    "sdk" : "org.gnome.Sdk//45",
     "build-extension": true,
     "separate-locales": false,
     "appstream-compose": false,
@@ -34,14 +34,14 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/jrb/puzzle-sets-xword-dl.git",
-                    "tag" : "0.4.5"
+                    "tag" : "0.4.6"
                 }
             ],
             "post-install": [
                 "install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo ../org.gnome.Crosswords.PuzzleSets.xword-dl.metainfo.xml",
                 "appstream-compose --basename=org.gnome.Crosswords.PuzzleSets.xword-dl --prefix=${FLATPAK_DEST} --origin=flatpak org.gnome.Crosswords.PuzzleSets.xword-dl",
                 "mv ${FLATPAK_DEST}/bin/xword-dl ${FLATPAK_DEST}/bin/xword-dl.orig",
-                "install -Dm755 ../xword-dl ${FLATPAK_DEST}/bin/xword-dl"
+                "install -Dm755 xword-dl ${FLATPAK_DEST}/bin/xword-dl"
             ]
         }
     ]
