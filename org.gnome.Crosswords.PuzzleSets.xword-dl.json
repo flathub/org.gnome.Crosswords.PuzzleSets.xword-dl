@@ -6,7 +6,6 @@
     "sdk" : "org.gnome.Sdk//47",
     "build-extension": true,
     "separate-locales": false,
-    "appstream-compose": false,
     "build-options": {
         "prefix": "/app/extensions"
     },
