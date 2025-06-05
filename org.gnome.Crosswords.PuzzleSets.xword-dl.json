@@ -3,7 +3,7 @@
     "runtime": "org.gnome.Crosswords",
     "runtime-version": "stable",
     "branch": "1",
-    "sdk" : "org.gnome.Sdk//47",
+    "sdk" : "org.gnome.Sdk//48",
     "build-extension": true,
     "separate-locales": false,
     "build-options": {
@@ -18,7 +18,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/thisisparker/xword-dl.git",
-                    "commit": "52c93b8cd3371c9391a445fac0d3234c0726a677"
+                    "commit": "cb083432b7a9873e0e915e515f76ba117d8812c4"
                 }
             ],
             "build-commands": [
@@ -33,7 +33,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/jrb/puzzle-sets-xword-dl.git",
-                    "tag" : "0.4.8"
+                    "tag" : "0.4.9"
                 }
             ],
             "post-install": [
