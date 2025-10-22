@@ -10,21 +10,7 @@
         "prefix": "/app/extensions"
     },
     "modules": [
-        "python3-requirements.json",
-        {
-            "name": "xword-dl",
-            "buildsystem": "simple",
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://github.com/thisisparker/xword-dl.git",
-                    "commit": "cb083432b7a9873e0e915e515f76ba117d8812c4"
-                }
-            ],
-            "build-commands": [
-                "pip3 install --no-deps --prefix=${FLATPAK_DEST} ."
-            ]
-        },
+        "python3-xword-dl.json",
         {
             "name": "puzzle-sets-xword-dl",
             "buildsystem": "meson",

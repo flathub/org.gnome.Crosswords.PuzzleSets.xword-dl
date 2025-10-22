@@ -3,13 +3,14 @@
 To release a new version of xword-dl for flathub:
 
 * Make a new branch
-* Update puzzle-sets-xword-dl first. Make sure that the
-  `python-requirements.json` file there is updated from upstream.
-* Copy `python-requirements.json` into this directory. It should be
-  identical.
-* Update `xword-dl` wrapper script to point to the new PYTHONPATH directory.
+* Create an updated `python3-xword-dl.json` command by running:
+  `flatpak-builder-tools/pip/flatpak-pip-generator --runtime='org.gnome.Sdk//48' xword-dl`
+* Add "-I" to the pip command in the generated json file. This will
+  tell it to ignore the versions of the python files that crosswords
+  uses for the convertor.
+* If the python version has changed, update `xword-dl` wrapper script
+  to point to the new PYTHONPATH directory,
 * Update flathub manifest to include new git tags for
-  puzzle-set-xword-dl and xword-dl.
-* **Build the flatpak locally!** It's very possible to break things
-  between the puzzle-set-xword-dl flatpak and this one.
+  puzzle-set-xword-dl, if they've changed.
+* **Build the flatpak locally!** It's very possible to break things.
 * Push to flathub and open a merge request
