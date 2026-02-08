@@ -6,11 +6,26 @@
     "sdk" : "org.gnome.Sdk//48",
     "build-extension": true,
     "separate-locales": false,
+    "appstream-compose": false,
     "build-options": {
         "prefix": "/app/extensions"
     },
     "modules": [
-        "python3-xword-dl.json",
+        "python3-requirements.json",
+        {
+            "name": "xword-dl",
+            "buildsystem": "simple",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/thisisparker/xword-dl.git",
+                    "commit": "0230250f297dfc40a8e31391a8099677d0a4ec7a"
+                }
+            ],
+            "build-commands": [
+                "export PYTHONPATH=${FLATPAK_DEST}/lib/python3.12/site-packages:${PYTHONPATH} && pip3 install --no-deps --ignore-installed --prefix=${FLATPAK_DEST} --no-build-isolation ."
+            ]
+        },
         {
             "name": "puzzle-sets-xword-dl",
             "buildsystem": "meson",
@@ -19,7 +34,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/jrb/puzzle-sets-xword-dl.git",
-                    "tag" : "0.4.9"
+                    "tag" : "0.5.0"
                 }
             ],
             "post-install": [
