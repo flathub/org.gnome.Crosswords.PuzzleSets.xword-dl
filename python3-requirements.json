@@ -1,9 +1,6 @@
 {
     "name": "python3-requirements",
     "buildsystem": "simple",
-    "build-options": {
-        "ccache": true
-    },
     "build-commands": [],
     "modules": [
         {
