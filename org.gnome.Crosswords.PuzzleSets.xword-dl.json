@@ -3,7 +3,7 @@
     "runtime": "org.gnome.Crosswords",
     "runtime-version": "stable",
     "branch": "1",
-    "sdk" : "org.gnome.Sdk//48",
+    "sdk" : "org.gnome.Sdk//50",
     "build-extension": true,
     "separate-locales": false,
     "appstream-compose": false,
@@ -19,11 +19,11 @@
                 {
                     "type": "git",
                     "url": "https://github.com/thisisparker/xword-dl.git",
-                    "commit": "0230250f297dfc40a8e31391a8099677d0a4ec7a"
+                    "commit": "9f559d24e7801f3afc79a04e06cca17782336d5e"
                 }
             ],
             "build-commands": [
-                "export PYTHONPATH=${FLATPAK_DEST}/lib/python3.12/site-packages:${PYTHONPATH} && pip3 install --no-deps --ignore-installed --prefix=${FLATPAK_DEST} --no-build-isolation ."
+                "export PYTHONPATH=${FLATPAK_DEST}/lib/python3.13/site-packages:${PYTHONPATH} && pip3 install --no-deps --ignore-installed --prefix=${FLATPAK_DEST} --no-build-isolation ."
             ]
         },
         {
@@ -34,7 +34,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/jrb/puzzle-sets-xword-dl.git",
-                    "tag" : "0.5.0"
+                    "tag" : "0.5.1"
                 }
             ],
             "post-install": [
