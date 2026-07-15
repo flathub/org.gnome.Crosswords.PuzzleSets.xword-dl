@@ -23,7 +23,7 @@
                 }
             ],
             "build-commands": [
-                "export PYTHONPATH=${FLATPAK_DEST}/lib/python3.12/site-packages:${PYTHONPATH} && pip3 install --no-deps --ignore-installed --prefix=${FLATPAK_DEST} --no-build-isolation ."
+                "export PYTHONPATH=${FLATPAK_DEST}/lib/python3.13/site-packages:${PYTHONPATH} && pip3 install --no-deps --ignore-installed --prefix=${FLATPAK_DEST} --no-build-isolation ."
             ]
         },
         {
